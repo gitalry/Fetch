@@ -150,8 +150,10 @@ try {
         //noinspection SimplifiableIfStatement
 
 
+
         if (id == R.id.action_logout) {
-            return true;
+            mRef.unauth();
+            loadLoginView();
         }
 
 
